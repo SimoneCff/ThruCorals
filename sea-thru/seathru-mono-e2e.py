@@ -1,28 +1,13 @@
 from __future__ import absolute_import, division, print_function
 
 import os
-import sys
-import glob
-import argparse
-import time
-import io
-
-import numpy as np
 import PIL.Image as pil
-import matplotlib as mpl
-import matplotlib.cm as cm
-import pynng
-from pynng import nng
-
 import torch
 from torchvision import transforms, datasets
-
-import deps.monodepth2.networks as networks
-from deps.monodepth2.layers import disp_to_depth
-from deps.monodepth2.utils import download_model_if_doesnt_exist
+import networks
+from utils import download_model_if_doesnt_exist
 
 from seathru import *
-
 
 def run(args):
     """Function to predict for a single image or folder of images
@@ -34,6 +19,8 @@ def run(args):
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
+
+    print(device)
 
     download_model_if_doesnt_exist(args.model_name)
     model_path = os.path.join("models", args.model_name)
