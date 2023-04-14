@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2470cc0f-c06b-49db-ab77-6f2d3eb425c5" name="Changes" comment="-Fixed missing libraries for Sea-thru package&#10;-Started working on GUI with tkinter&#10;-Added varous files">
-      <change afterPath="$PROJECT_DIR$/UI/windows/Proteus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/windows/fileopen.py" afterDir="false" />
+    <list default="true" id="2470cc0f-c06b-49db-ab77-6f2d3eb425c5" name="Changes" comment="-Added open file path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/mainframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/windows/mainframe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681464127725</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-Added open file path">
+      <created>1681473945361</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681473945361</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +292,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="jh" />
     <MESSAGE value="-Fixed missing libraries for Sea-thru package&#10;-Started working on GUI with tkinter&#10;-Added varous files" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Fixed missing libraries for Sea-thru package&#10;-Started working on GUI with tkinter&#10;-Added varous files" />
+    <MESSAGE value="-Added open file path" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Added open file path" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pyground$main.coverage" NAME="main Coverage Results" MODIFIED="1681291416203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
