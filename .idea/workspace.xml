@@ -4,10 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2470cc0f-c06b-49db-ab77-6f2d3eb425c5" name="Changes" comment="-Added open file path">
+    <list default="true" id="2470cc0f-c06b-49db-ab77-6f2d3eb425c5" name="Changes" comment="-Change Main Window class components&#10;-moved open widgets inside a new Qwidget class&#10;-added fileopen.py">
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono+stereo_1024x320/depth.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono+stereo_1024x320/encoder.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono+stereo_1024x320/pose.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono+stereo_1024x320/pose_encoder.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono_1024x320/depth.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono_1024x320/encoder.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono_1024x320/pose.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/mono_1024x320/pose_encoder.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/stereo_1024x320/depth.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/models/stereo_1024x320/encoder.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/output/mono+stereo_out.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transform/output/stereo_out.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/fileopen.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/windows/fileopen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/mainframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/windows/mainframe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transform/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/assets/copyright_notice.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/assets/teaser.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/assets/test_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/datasets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/datasets/kitti_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/datasets/mono_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/depth_prediction_example.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/evaluate_depth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/evaluate_pose.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/experiments/mono+stereo_experiments.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/experiments/mono_experiments.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/experiments/odom_experiments.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/experiments/stereo_experiments.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/export_gt_depth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/kitti_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/layers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/networks/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/networks/depth_decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/networks/pose_cnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/networks/pose_decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/networks/resnet_encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/options.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/benchmark/eigen_to_benchmark_ids.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/benchmark/test_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/benchmark/train_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/benchmark/val_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/eigen/test_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/eigen_benchmark/test_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/eigen_full/train_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/eigen_full/val_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/eigen_zhou/train_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/eigen_zhou/val_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/kitti_archives_to_download.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/odom/test_files_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/odom/test_files_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/odom/train_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/splits/odom/val_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/test_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/trainer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/deps/monodepth2/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/image.raw" beforeDir="false" afterPath="$PROJECT_DIR$/Transform/image.raw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/seathru-mono-e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transform/seathru-mono-e2e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-thru/seathru.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transform/seathru.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tut pytorch/tensor/random_tensor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tut pytorch/tensor/tensor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tut pytorch/workflow/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tut pytorch/workflow/work.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +127,11 @@
       <recent name="$PROJECT_DIR$/venv/lib/python3.11/site-packages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Transform/output" />
+      <recent name="$PROJECT_DIR$/Transform/models" />
+      <recent name="$PROJECT_DIR$/Transform" />
+      <recent name="$PROJECT_DIR$/UI/windows/widgets" />
       <recent name="$PROJECT_DIR$/UI/windows" />
-      <recent name="$PROJECT_DIR$/UI" />
-      <recent name="$PROJECT_DIR$/sea-thru" />
-      <recent name="$PROJECT_DIR$/sea-thru/deps" />
-      <recent name="$PROJECT_DIR$/tut pytorch/tensor" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,7 +214,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sea-thru/seathru-mono-e2e.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Transform/seathru-mono-e2e.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,7 +236,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sea-thru/seathru.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Transform/seathru.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,7 +303,8 @@
       <workItem from="1681455840360" duration="2410000" />
       <workItem from="1681464060685" duration="99000" />
       <workItem from="1681480636325" duration="117000" />
-      <workItem from="1681609136352" duration="1600000" />
+      <workItem from="1681609136352" duration="1815000" />
+      <workItem from="1681635225864" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="jh">
       <created>1680728878593</created>
@@ -289,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681480715248</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-Change Main Window class components&#10;-moved open widgets inside a new Qwidget class&#10;-added fileopen.py">
+      <created>1681610934609</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681610934610</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +384,8 @@
     <MESSAGE value="jh" />
     <MESSAGE value="-Fixed missing libraries for Sea-thru package&#10;-Started working on GUI with tkinter&#10;-Added varous files" />
     <MESSAGE value="-Added open file path" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Added open file path" />
+    <MESSAGE value="-Change Main Window class components&#10;-moved open widgets inside a new Qwidget class&#10;-added fileopen.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Change Main Window class components&#10;-moved open widgets inside a new Qwidget class&#10;-added fileopen.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pyground$main.coverage" NAME="main Coverage Results" MODIFIED="1681291416203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
