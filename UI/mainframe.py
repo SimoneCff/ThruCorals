@@ -1,5 +1,5 @@
 import sys
-from UI.windows.widgets import fileopen
+from UI.widgets import fileopen
 
 from PyQt6 import QtGui
 from PyQt6.QtWidgets import QApplication, QMainWindow
@@ -21,11 +21,10 @@ class MainWindow(QMainWindow):
             window.close()
             exit()
 
+def start():
+    app = QApplication(sys.argv)
+    w = MainWindow()
+    w.show()
 
-app = QApplication(sys.argv)
-
-w = MainWindow()
-w.show()
-
-sys.exit(app.exec())
+    sys.exit(app.exec())
 

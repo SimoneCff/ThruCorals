@@ -1,4 +1,8 @@
-import cv2
-import numpy as np
-import torch
-from torchvision import transforms
+from UI.mainframe import start
+
+def main():
+    start()
+
+
+if __name__ == "__main__":
+    main()
