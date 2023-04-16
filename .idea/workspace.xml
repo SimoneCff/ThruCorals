@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2470cc0f-c06b-49db-ab77-6f2d3eb425c5" name="Changes" comment="-Finish Implementation of Sea-Thru">
+    <list default="true" id="2470cc0f-c06b-49db-ab77-6f2d3eb425c5" name="Changes" comment="-Refactor UI&#10;-Added MainFrme inìt inside main.py&#10;-Started Working implementation via GUI of Sea-Thru Transformation and image caption">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/ControlUnit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/Proteus.png" beforeDir="false" afterPath="$PROJECT_DIR$/UI/Proteus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/mainframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/mainframe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/widgets/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/windows/widgets/fileopen.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/widgets/fileopen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
       <recent name="$PROJECT_DIR$/UI/windows/widgets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.build">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,7 +237,7 @@
       <workItem from="1681464060685" duration="99000" />
       <workItem from="1681480636325" duration="117000" />
       <workItem from="1681609136352" duration="1815000" />
-      <workItem from="1681635225864" duration="4470000" />
+      <workItem from="1681635225864" duration="5385000" />
     </task>
     <task id="LOCAL-00001" summary="jh">
       <created>1680728878593</created>
@@ -309,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681637639517</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="-Refactor UI&#10;-Added MainFrme inìt inside main.py&#10;-Started Working implementation via GUI of Sea-Thru Transformation and image caption">
+      <created>1681640945088</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681640945088</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +333,8 @@
     <MESSAGE value="-Added open file path" />
     <MESSAGE value="-Change Main Window class components&#10;-moved open widgets inside a new Qwidget class&#10;-added fileopen.py" />
     <MESSAGE value="-Finish Implementation of Sea-Thru" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Finish Implementation of Sea-Thru" />
+    <MESSAGE value="-Refactor UI&#10;-Added MainFrme inìt inside main.py&#10;-Started Working implementation via GUI of Sea-Thru Transformation and image caption" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Refactor UI&#10;-Added MainFrme inìt inside main.py&#10;-Started Working implementation via GUI of Sea-Thru Transformation and image caption" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pyground$main.coverage" NAME="main Coverage Results" MODIFIED="1681291416203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
