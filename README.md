@@ -5,7 +5,5 @@
 #
 Research and implementation of transforming and classification of submarines images and video via python and Sea-thru Algorithm
 
-#
-Proteus: Subsystem for clarification and transformation of submarine imagise
 
 
