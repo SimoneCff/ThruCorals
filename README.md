@@ -3,7 +3,7 @@
 </p>
 
 #
-Research and implementation of transforming and classification of submarines images and video via python and Sea-thru Algorithm
+Research and implementation of transforming and classification of submarine coral images and video via python and Sea-thru Algorithm
 
 
 
