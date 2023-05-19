@@ -1,5 +1,5 @@
 <p align="Center">
-<img width="200" height="200" src="https://i.imgur.com/M5P5Hry.png">
+<h1> Coral CNN </h1>
 </p>
 
 #
