@@ -11,3 +11,8 @@ Link Progetto Principale SeaThru: https://www.deryaakkaynak.com/sea-thru
   Per avviare il software digitare il seguente comando nella cartella principale:
   ```bash
   python3 .\Thrucorals.py --folder NOME_FOLDER
+  ```
+  Link DataSet Originale: https://www.kaggle.com/datasets/jxwleong/coral-reef-dataset
+##
+
+Anno Accademico 2022-2023
