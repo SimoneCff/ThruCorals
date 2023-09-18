@@ -1,17 +1,13 @@
 # ThruCorals
+Progetto di Tesi presso l'Università "Parthenope" di Napoli.
 
-ThruCorals combines the SeaThru image transformation algorithm with the power of the CoralCNN neural network to provide accurate and reliable results in coral classification. The combination of SeaThru and CoralCNN represents an innovative solution for the visualization and analysis of marine corals, providing a tool for the analysis and classification of such images.
+## Abstract
 
-## About
-
-ThruCorals combines the SeaThru image transformation algorithm with the power of the CoralCNN neural network to provide accurate and reliable results in coral classification. The combination of SeaThru and CoralCNN represents an innovative solution for the visualization and analysis of marine corals, providing a tool for the analysis and classification of such images.
+Nell'arco dell'utlimo decennio, l'Inteligenza Artificiale ha acquisito un ruolo cardine nell'ambito delle Scienze Biomarine per quanto concerne il riconoscimento della flora e della fauna. Partendo dal problema del riconoscimento della fauna appartenente alla famiglia dei Antozoi, a cui appartengono anche quelli che comunemente conosciamo come Coralli, si è voluto sviluppare una "Convolutional Neural Network" che fosse in grado di classificare gli elementi sopra menzionati; il tutto è stato realizzato con l'ausilio dell'algoritmo "SeaThru" per il miglioramento delle immagini acquisite. Il software realizzato porta il nome di ThruCorals, e riunisce sotto un'unico tool la classificazione dei elementi citati ed il loro migliormaneto visivo. Gli obiettivi principali di tale progetto sono: (I) Creare uno strumento per catalogare velocemente e con massima precisione gli elementi acquisiti tramite il drone sottomarino OR2 , (II) Sviluppare strumenti per verificare i dataset e adattare questi ultimi al modello sviluppato, (III) Automatizzare, adattare e migliorare il processo che porta al miglioramento dei dati, tramite Seathru ed infine (IV) Dimostrare e verificare il miglioramento in seguito all'introduzione di tale ausilio. Tutti i dati ed il software svilupato sono reperibili sulla pagina GitHub sotto licenza Creative Commons.
 
 ## SeaThru
 
 The SeaThru algorithm applies a series of advanced transformations to the image, eliminating noise and improving overall quality and accuracy. This ensures that crucial image details are highlighted and unwanted interferences are minimized for classification purposes.
 
 Link: [https://www.deryaakkaynak.com/sea-thru](https://www.deryaakkaynak.com/sea-thru)
-
-## CoralCNN Convolutional Network
-
-CoralCNN is a convolutional neural network developed for the classification of marine corals. This network is trained to identify different species of corals and provides an automated and reliable method for recognizing coral life forms. The main goal of CoralCNN is to support monitoring, research, and conservation of coral reef ecosystems. In combination with SeaThru, CoralCNN offers users a comprehensive solution for exploring and understanding marine corals.
+=
