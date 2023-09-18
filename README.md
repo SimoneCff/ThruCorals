@@ -8,6 +8,6 @@ Nell'arco dell'utlimo decennio, l'Inteligenza Artificiale ha acquisito un ruolo 
 Link Progetto Principale SeaThru: https://www.deryaakkaynak.com/sea-thru
 
 ## Istruzioni per l'utilizzo
-  Per avviare il software digitare il seguente comando nella cartella principale: https://www.deryaakkaynak.com/sea-thru
+  Per avviare il software digitare il seguente comando nella cartella principale:
   ```bash
   python3 .\Thrucorals.py --folder NOME_FOLDER
