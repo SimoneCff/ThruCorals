@@ -1,5 +1,5 @@
 <p align="center">
-# ThruCorals 
+ <h1> ThruCorals  </h1>
 </p>
 
 ## Classificazione di Antozoi mediante Convolutional Neural Network ed miglioramento visivo mediante l’algoritmo SeaThru
