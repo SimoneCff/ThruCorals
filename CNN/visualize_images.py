@@ -1,4 +1,4 @@
-# Assuming you have already created a dataloader called 'dataloader' with images and predicted labels
+
 import matplotlib.pyplot as plt
 import random
 import torch
