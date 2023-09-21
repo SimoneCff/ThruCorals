@@ -51,13 +51,11 @@ class CoralDataset(Dataset):
         col = self.cols[index]
 
         img = Image.open(img_path).convert('RGB')
-        #cropping image
         img_width = img.width
         img_height = img.height
         half_width = int(img_width * self.scale)
         half_height = int(img_height * self.scale)
         
-        #Calculate x and y
         x_min = max(0,col - half_width)
         y_min = max(0,row - half_height)
 
