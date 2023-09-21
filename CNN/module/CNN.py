@@ -1,6 +1,5 @@
 import torch.nn as nn
 
-#Definition of the Convolutional Neural Network
 class CoralCNN(nn.Module):
 
     def __init__(self, num_classes):
@@ -38,7 +37,6 @@ class CoralCNN(nn.Module):
         #Second Layer full connected
         self.fc2 = nn.Linear(in_features=1024, out_features=num_classes)     
 
-    # Progresses data across layers
     def forward(self, x):
         #FL
         out = self.conv1(x)
@@ -64,7 +62,7 @@ class CoralCNN(nn.Module):
         out = self.relu4(out)
         out = self.maxpool4(out)
 
-        #Reshape e Resize input FL
+        #Reshape
         out = out.reshape(out.size(0), -1)
         
         out = self.fc1(out)
