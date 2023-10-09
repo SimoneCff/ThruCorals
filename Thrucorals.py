@@ -77,6 +77,7 @@ if __name__  == '__main__':
                         help='monodepth model name')
     parser.add_argument('--output-graphs', action='store_true', help='Output graphs')
     parser.add_argument('--raw', action='store_true', help='RAW image')
+    parser.add_argument('--transform_only', action='store_true', help='Set Transform only')
     parser.add_argument('--folder', type=str, required=True,help='Input Folder for Classification')
     args = parser.parse_args()
     delete()
@@ -102,6 +103,8 @@ if __name__  == '__main__':
     if not os.listdir('output'):
         print("<ERROR> : Output Folder not")
         exit()
-
-    Smart_sorting('output')
+        
+    if not (args.transform_only):
+        Smart_sorting('output')
+        
     print("Operation DONE, Terminating script...")
