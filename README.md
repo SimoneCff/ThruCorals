@@ -17,11 +17,8 @@ Link Progetto Principale SeaThru: https://www.deryaakkaynak.com/sea-thru
   ```
   Dataset utilizzato per Testing & Training
   Link https://www.kaggle.com/datasets/jxwleong/coral-reef-dataset
+## Versione GUI
+Se si vuole optare per una versioene piu semplice ed intuitiva, é possibile scaricare ed avviare la versione GUI.
+Reperibile nella repository: https://github.com/SimoneCff/ThruCorals-GUI
 ##
-
-
-
-
-
-
 Anno Accademico 2022-2023
