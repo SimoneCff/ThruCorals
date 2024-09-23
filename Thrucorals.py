@@ -2,14 +2,12 @@ from __future__ import absolute_import, division, print_function
 import os
 from delete import delete
 from SeaThru.transform import run
-from multiprocessing import Pool, cpu_count
 from CNN.valuate import Smart_sorting
 import argparse
 from rich.progress import Progress
 import ssl
 import contextlib
 from io import StringIO
-import torch
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -28,25 +26,12 @@ def get_image_list(root_folder):
 
     return image_list
 
-def start_pool(image_l, model_path, args):
-    with Pool(processes=cpu_count()) as pool :
-        with Progress() as progress:
-         results = [pool.apply_async(transform_image, (image_name, model_path, args,args.folder)) for image_name in image_l]
-         task_id = progress.add_task("Processing images...", total=len(results))
-         image_tl = []
-         for r in results:
-                if r is not None:
-                 image_tl.append(r.get())
-                progress.update(task_id, advance=1)
-
-    print("\n SeaThru Enhancment Done, Now Classifing...")
-
 def transform_image(image_name, model_path, args, data_in):
     try:
-        with contextlib.redirect_stdout(StringIO()):
-            out = run(image_name, model_path, args, data_in)
+        out = run(image_name, model_path, args, data_in)
         return out
-    except:
+    except Exception as e:
+        print(f"Exception occured {e}")
         return None
 
 def start_iterative(image_l,model_path,args, data_in):
@@ -89,21 +74,14 @@ if __name__  == '__main__':
     image_l = get_image_list(args.folder)
     
     if len(image_l) == 0:
-        print("<ERROR> : No Images Found in the folder, ")
+        print("<ERROR> : No Images Found in the folder")
         exit()
 
     model_path = os.path.join("SeaThru/models", args.model_name)
 
-    if torch.cuda.is_available() :
-        start_iterative(image_l=image_l,model_path=model_path,args=args, data_in= args.folder)
-    else:
-        start_pool(image_l=image_l,model_path=model_path,args=args)
+    start_iterative(image_l=image_l,model_path=model_path,args=args, data_in= args.folder)
     delete()
 
-    if not os.listdir('output'):
-        print("<ERROR> : Output Folder not")
-        exit()
-        
     if not (args.transform_only):
         Smart_sorting('output')
         
