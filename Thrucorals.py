@@ -1,4 +1,4 @@
-from __future__ import absolute_import, division, print_function
+ from __future__ import absolute_import, division, print_function
 import os
 from delete import delete
 from SeaThru.transform import run
@@ -6,8 +6,6 @@ from CNN.valuate import Smart_sorting
 import argparse
 from rich.progress import Progress
 import ssl
-import contextlib
-from io import StringIO
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -83,6 +81,6 @@ if __name__  == '__main__':
     delete()
 
     if not (args.transform_only):
-        Smart_sorting('output')
+        Smart_sorting('./output')
         
     print("Operation DONE, Terminating script...")
