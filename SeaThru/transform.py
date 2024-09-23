@@ -57,7 +57,7 @@ def run(image_name, model_path ,args, data_in):
 
     # Load image and preprocess
     img = Image.fromarray(rawpy.imread(data_in+image_name).postprocess()) if image_name.endswith(".raw") else pil.open(data_in+image_name).convert('RGB')
-    img.thumbnail((args.size, args.size), Image.ANTIALIAS)
+    img.thumbnail((args.size, args.size), Image.Resampling.LANCZOS)
     original_width, original_height = img.size
     # img = exposure.equalize_adapthist(np.array(img), clip_limit=0.03)
     # img = Image.fromarray((np.round(img * 255.0)).astype(np.uint8))
@@ -85,19 +85,11 @@ def run(image_name, model_path ,args, data_in):
     recovered = denoise_tv_chambolle(recovered, sigma_est)
     im = Image.fromarray((np.round(recovered * 255.0)).astype(np.uint8))
 
-    print("jkm")
-    if not os.path.exists('output'):
-        # Crea la cartella "output"
+    if not os.path.exists('./output'):
         print("Making output dir")
-        os.makedirs('output')
+        os.makedirs('./output')
 
-    #Saving File
-    output_path = "output/"+ os.path.dirname(image_name)
-    create_dir(output_path)
-    
     output = "output/"+image_name
     im.save(output, format='jpeg')
     
     return output
-    
-    
